@@ -137,13 +137,25 @@ namespace calculator2
                     textBox1.Text = b.ToString();
                     break;
                 case 4:
-                    b = a / int.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
+                    int delzero;
+                    delzero = int.Parse(textBox1.Text);
+                    if (delzero == 0.0)
+                        MessageBox.Show("Деление на ноль!");
+                    else
+                    {
+                        b = a / delzero;
+                        textBox1.Text = b.ToString();
+                    }
                     break;
-
                 default:
                     break;
             }
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
 
         }
     }

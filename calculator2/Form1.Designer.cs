@@ -58,6 +58,7 @@
             this.textBox1.Size = new System.Drawing.Size(218, 76);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // one
             // 
@@ -266,7 +267,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(245, 342);
+            this.ClientSize = new System.Drawing.Size(250, 342);
             this.Controls.Add(this.znak);
             this.Controls.Add(this.enter);
             this.Controls.Add(this.zero);
