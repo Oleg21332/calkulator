@@ -60,7 +60,7 @@ namespace calculator2
 
         private void six_Click(object sender, EventArgs e)
         {
-            textBox1.Text = textBox1.Text + 6;
+            textBox1.Text = textBox1.Text + ;
         }
 
         private void seven_Click(object sender, EventArgs e)
