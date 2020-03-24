@@ -17,10 +17,11 @@ namespace calculator2
             InitializeComponent();
         }
 
-        public int a;
-        public int b;
+        public double a;
+        public double b;
         public int count;
         public int x;
+        public bool zna = true;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -60,7 +61,7 @@ namespace calculator2
 
         private void six_Click(object sender, EventArgs e)
         {
-            textBox1.Text = textBox1.Text + ;
+            textBox1.Text = textBox1.Text + 6;
         }
 
         private void seven_Click(object sender, EventArgs e)
@@ -147,9 +148,42 @@ namespace calculator2
                         textBox1.Text = b.ToString();
                     }
                     break;
+                case 5:
+                    b = Math.Sin(a);
+                    textBox1.Text = b.ToString();
+                    break;
+                case 6:
+                    b = Math.Cos(a);
+                    textBox1.Text = b.ToString();
+                    break;
+                case 7:
+                    b = Math.Tan(a);
+                    textBox1.Text = b.ToString();
+                    break;
+                case 8:
+                    b = 1 / Math.Tan(a);
+                    textBox1.Text = b.ToString();
+                    break;
+                case 9:
+                    b = Math.Pow(a, 2);
+                    textBox1.Text = b.ToString();
+                    break;
+                case 10:
+                    b = Math.Exp(a);
+                    textBox1.Text = b.ToString();
+                    break;
+                case 11:
+                    b = Math.Sqrt(a);
+                    textBox1.Text = b.ToString();
+                    break;
                 default:
                     break;
             }
+
+
+
+
+
 
         }
 
@@ -157,6 +191,51 @@ namespace calculator2
         {
 
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = Math.Sin(Convert.ToDouble(textBox1.Text)).ToString();
+        }
+
+        private void tg_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = Math.Tan(Convert.ToDouble(textBox1.Text)).ToString();
+
+        }
+
+        private void ctg_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = (1 / Math.Tan(Convert.ToDouble(textBox1.Text))).ToString();
+
+        }
+
+        private void cos_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = Math.Cos(Convert.ToDouble(textBox1.Text)).ToString();
+
+        }
+
+        private void sqrt_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = Math.Sqrt(Convert.ToDouble(textBox1.Text)).ToString();
+        }
+
+        private void exp_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = Math.Exp(Convert.ToDouble(textBox1.Text)).ToString();
+        }
+
+        private void square_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = Math.Pow(Convert.ToDouble(a), Convert.ToDouble(b)).ToString();
+        }
+
+       
+
+        private void log_Click(object sender, EventArgs e)
+        {
+         textBox1.Text = Math.Log(Convert.ToDouble(textBox1.Text)).ToString();
         }
     }
 }

@@ -46,16 +46,24 @@
             this.zero = new System.Windows.Forms.Button();
             this.enter = new System.Windows.Forms.Button();
             this.znak = new System.Windows.Forms.Label();
+            this.sin = new System.Windows.Forms.Button();
+            this.cos = new System.Windows.Forms.Button();
+            this.tg = new System.Windows.Forms.Button();
+            this.ctg = new System.Windows.Forms.Button();
+            this.squart = new System.Windows.Forms.Button();
+            this.sqrt = new System.Windows.Forms.Button();
+            this.exp = new System.Windows.Forms.Button();
+            this.log = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(14, 14);
+            this.textBox1.Location = new System.Drawing.Point(12, 14);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(218, 76);
+            this.textBox1.Size = new System.Drawing.Size(331, 76);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -262,12 +270,116 @@
             this.znak.Size = new System.Drawing.Size(0, 24);
             this.znak.TabIndex = 17;
             // 
+            // sin
+            // 
+            this.sin.BackColor = System.Drawing.SystemColors.Control;
+            this.sin.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.sin.Location = new System.Drawing.Point(237, 114);
+            this.sin.Name = "sin";
+            this.sin.Size = new System.Drawing.Size(50, 50);
+            this.sin.TabIndex = 18;
+            this.sin.Text = "sin";
+            this.sin.UseVisualStyleBackColor = true;
+            this.sin.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cos
+            // 
+            this.cos.BackColor = System.Drawing.SystemColors.Control;
+            this.cos.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cos.Location = new System.Drawing.Point(237, 170);
+            this.cos.Name = "cos";
+            this.cos.Size = new System.Drawing.Size(50, 50);
+            this.cos.TabIndex = 19;
+            this.cos.Text = "cos";
+            this.cos.UseVisualStyleBackColor = true;
+            this.cos.Click += new System.EventHandler(this.cos_Click);
+            // 
+            // tg
+            // 
+            this.tg.BackColor = System.Drawing.SystemColors.Control;
+            this.tg.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tg.Location = new System.Drawing.Point(237, 226);
+            this.tg.Name = "tg";
+            this.tg.Size = new System.Drawing.Size(50, 50);
+            this.tg.TabIndex = 20;
+            this.tg.Text = "tg";
+            this.tg.UseVisualStyleBackColor = true;
+            this.tg.Click += new System.EventHandler(this.tg_Click);
+            // 
+            // ctg
+            // 
+            this.ctg.BackColor = System.Drawing.SystemColors.Control;
+            this.ctg.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ctg.Location = new System.Drawing.Point(237, 282);
+            this.ctg.Name = "ctg";
+            this.ctg.Size = new System.Drawing.Size(50, 50);
+            this.ctg.TabIndex = 21;
+            this.ctg.Text = "ctg";
+            this.ctg.UseVisualStyleBackColor = true;
+            this.ctg.Click += new System.EventHandler(this.ctg_Click);
+            // 
+            // squart
+            // 
+            this.squart.BackColor = System.Drawing.SystemColors.Control;
+            this.squart.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.squart.Location = new System.Drawing.Point(293, 114);
+            this.squart.Name = "squart";
+            this.squart.Size = new System.Drawing.Size(50, 50);
+            this.squart.TabIndex = 22;
+            this.squart.Text = "X^2";
+            this.squart.UseVisualStyleBackColor = true;
+            this.squart.Click += new System.EventHandler(this.square_Click);
+            // 
+            // sqrt
+            // 
+            this.sqrt.BackColor = System.Drawing.SystemColors.Control;
+            this.sqrt.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.sqrt.Location = new System.Drawing.Point(293, 226);
+            this.sqrt.Name = "sqrt";
+            this.sqrt.Size = new System.Drawing.Size(50, 50);
+            this.sqrt.TabIndex = 24;
+            this.sqrt.Text = "sqrt";
+            this.sqrt.UseVisualStyleBackColor = true;
+            this.sqrt.Click += new System.EventHandler(this.sqrt_Click);
+            // 
+            // exp
+            // 
+            this.exp.BackColor = System.Drawing.SystemColors.Control;
+            this.exp.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.exp.Location = new System.Drawing.Point(293, 282);
+            this.exp.Name = "exp";
+            this.exp.Size = new System.Drawing.Size(50, 50);
+            this.exp.TabIndex = 25;
+            this.exp.Text = "Exp";
+            this.exp.UseVisualStyleBackColor = true;
+            this.exp.Click += new System.EventHandler(this.exp_Click);
+            // 
+            // log
+            // 
+            this.log.BackColor = System.Drawing.SystemColors.Control;
+            this.log.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.log.Location = new System.Drawing.Point(293, 170);
+            this.log.Name = "log";
+            this.log.Size = new System.Drawing.Size(50, 50);
+            this.log.TabIndex = 26;
+            this.log.Text = "Log";
+            this.log.UseVisualStyleBackColor = true;
+            this.log.Click += new System.EventHandler(this.log_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(250, 342);
+            this.ClientSize = new System.Drawing.Size(359, 342);
+            this.Controls.Add(this.log);
+            this.Controls.Add(this.exp);
+            this.Controls.Add(this.sqrt);
+            this.Controls.Add(this.squart);
+            this.Controls.Add(this.ctg);
+            this.Controls.Add(this.tg);
+            this.Controls.Add(this.cos);
+            this.Controls.Add(this.sin);
             this.Controls.Add(this.znak);
             this.Controls.Add(this.enter);
             this.Controls.Add(this.zero);
@@ -314,6 +426,14 @@
         private System.Windows.Forms.Button zero;
         private System.Windows.Forms.Button enter;
         private System.Windows.Forms.Label znak;
+        private System.Windows.Forms.Button sin;
+        private System.Windows.Forms.Button cos;
+        private System.Windows.Forms.Button tg;
+        private System.Windows.Forms.Button ctg;
+        private System.Windows.Forms.Button squart;
+        private System.Windows.Forms.Button sqrt;
+        private System.Windows.Forms.Button exp;
+        private System.Windows.Forms.Button log;
     }
 }
 
