@@ -412,5 +412,59 @@ namespace calculator2
         {
             textBox1.Text = Math.Sqrt(Convert.ToDouble(textBox1.Text)).ToString();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string a = textBox2.Text.ToLower().ToString();
+            textBox3.Text = a;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string a = textBox2.Text.ToUpper().ToString();
+            textBox3.Text = a;
+        }
+
+        private void checksim_Click(object sender, EventArgs e)
+        {
+            string a = textBox2.Text.Length.ToString();
+            stroka.Text = $"Длина строки:{a}";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = textBox2.Text.Replace("чю", "чу");
+
+            textBox3.Text = textBox2.Text.Replace("щю", "щу");
+
+            textBox3.Text = textBox2.Text.Replace("чя", "ча");
+
+            textBox3.Text = textBox2.Text.Replace("щя", "ща");
+
+            textBox3.Text = textBox2.Text.Replace("жы", "жи");
+
+            textBox3.Text = textBox2.Text.Replace("шы", "ши");
+
+            textBox3.Text = textBox2.Text.Replace("чьн", "чн");
+
+            textBox3.Text = textBox2.Text.Replace("чьк", "чк");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+          //  string a = textBox2.Text;
+           // a = textBox2.Text.Substring(7);
+            //textBox3.Text = a;
+        }
     }
 }
