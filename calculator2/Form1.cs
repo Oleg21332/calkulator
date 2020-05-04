@@ -167,6 +167,7 @@ namespace calculator2
                 case 9:
                     b = Math.Pow(a, 2);
                     textBox1.Text = b.ToString();
+                  
                     break;
                 case 10:
                     b = Math.Exp(a);
@@ -227,8 +228,9 @@ namespace calculator2
         }
 
         private void square_Click(object sender, EventArgs e)
+           
         {
-            textBox1.Text = Math.Pow(Convert.ToDouble(a), Convert.ToDouble(b)).ToString();
+            textBox1.Text = Math.Pow(Convert.ToDouble(textBox1.Text), Convert.ToDouble(2)).ToString(); 
         }
 
        
@@ -236,6 +238,179 @@ namespace calculator2
         private void log_Click(object sender, EventArgs e)
         {
          textBox1.Text = Math.Log(Convert.ToDouble(textBox1.Text)).ToString();
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hex_Click(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(textBox1.Text);
+            textBox1.Text = Convert.ToString(i, 16);
+        }
+
+        private void oct_Click(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(textBox1.Text);
+            textBox1.Text = Convert.ToString(i, 8);
+        }
+
+        private void bin_Click(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(textBox1.Text);
+            textBox1.Text = Convert.ToString(i, 2);
+        }
+
+        private void Dec_Click(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(textBox1.Text);
+            textBox1.Text = Convert.ToString(i, 10);
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void three_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 3;
+        }
+
+        private void one_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 1;
+        }
+
+        private void two_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 2;
+        }
+
+        private void four_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 4;
+        }
+
+        private void five_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 5;
+        }
+
+        private void six_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 6;
+        }
+
+        private void seven_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 7;
+        }
+
+        private void eight_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 8;
+        }
+
+        private void sin_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = Math.Sin(Convert.ToDouble(textBox1.Text)).ToString();
+        }
+
+        private void squart_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = Math.Pow(Convert.ToDouble(textBox1.Text), Convert.ToDouble(2)).ToString();
+        }
+
+        private void nine_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 9;
+        }
+
+        private void zero_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 0;
+        }
+
+        private void clear_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            znak.Text = "";
+        }
+
+        private void enter_Click_1(object sender, EventArgs e)
+        {
+            calculate();
+            znak.Text = "";
+        }
+
+        private void cos_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = Math.Cos(Convert.ToDouble(textBox1.Text)).ToString();
+        }
+
+        private void tg_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = Math.Tan(Convert.ToDouble(textBox1.Text)).ToString();
+        }
+
+        private void ctg_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = (1 / Math.Tan(Convert.ToDouble(textBox1.Text))).ToString();
+        }
+
+        private void log_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = Math.Log(Convert.ToDouble(textBox1.Text)).ToString();
+        }
+
+        private void division_Click_1(object sender, EventArgs e)
+        {
+            a = int.Parse(textBox1.Text);
+            textBox1.Clear();
+            count = 4;
+            znak.Text = a.ToString() + "/";
+        }
+
+        private void plus_Click_1(object sender, EventArgs e)
+        {
+            a = int.Parse(textBox1.Text);
+            textBox1.Clear();
+            count = 1;
+            znak.Text = a.ToString() + "+";
+        }
+
+        private void multiplication_Click_1(object sender, EventArgs e)
+        {
+            a = int.Parse(textBox1.Text);
+            textBox1.Clear();
+            count = 3;
+            znak.Text = a.ToString() + "*";
+        }
+
+        private void minus_Click_1(object sender, EventArgs e)
+        {
+            a = int.Parse(textBox1.Text);
+            textBox1.Clear();
+            count = 2;
+            znak.Text = a.ToString() + "-";
+        }
+
+        private void exp_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = Math.Exp(Convert.ToDouble(textBox1.Text)).ToString();
+        }
+
+        private void sqrt_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = Math.Sqrt(Convert.ToDouble(textBox1.Text)).ToString();
         }
     }
 }
