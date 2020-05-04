@@ -16,12 +16,13 @@ namespace calculator2
         {
             InitializeComponent();
         }
-
+        public int c;
         public double a;
         public double b;
         public int count;
         public int x;
         public bool zna = true;
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -474,6 +475,25 @@ namespace calculator2
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            с = 36;
+            x = Convert.tb4.ToInt32;
+            tb5.Text = x * с;
+            tb5.Text = Convert.ToString(tb5.Text);
 
         }
     }
