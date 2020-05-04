@@ -466,5 +466,15 @@ namespace calculator2
            // a = textBox2.Text.Substring(7);
             //textBox3.Text = a;
         }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
