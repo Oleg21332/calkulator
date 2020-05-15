@@ -22,7 +22,7 @@ namespace calculator2
         public int count;
         public int x;
         public bool zna = true;
-        
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -168,7 +168,7 @@ namespace calculator2
                 case 9:
                     b = Math.Pow(a, 2);
                     textBox1.Text = b.ToString();
-                  
+
                     break;
                 case 10:
                     b = Math.Exp(a);
@@ -229,16 +229,16 @@ namespace calculator2
         }
 
         private void square_Click(object sender, EventArgs e)
-           
+
         {
-            textBox1.Text = Math.Pow(Convert.ToDouble(textBox1.Text), Convert.ToDouble(2)).ToString(); 
+            textBox1.Text = Math.Pow(Convert.ToDouble(textBox1.Text), Convert.ToDouble(2)).ToString();
         }
 
-       
+
 
         private void log_Click(object sender, EventArgs e)
         {
-         textBox1.Text = Math.Log(Convert.ToDouble(textBox1.Text)).ToString();
+            textBox1.Text = Math.Log(Convert.ToDouble(textBox1.Text)).ToString();
         }
 
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -421,7 +421,7 @@ namespace calculator2
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-          
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -463,8 +463,8 @@ namespace calculator2
 
         private void button4_Click(object sender, EventArgs e)
         {
-          //  string a = textBox2.Text;
-           // a = textBox2.Text.Substring(7);
+            //  string a = textBox2.Text;
+            // a = textBox2.Text.Substring(7);
             //textBox3.Text = a;
         }
 
@@ -490,11 +490,15 @@ namespace calculator2
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            с = 36;
-            x = Convert.tb4.ToInt32;
-            tb5.Text = x * с;
-            tb5.Text = Convert.ToString(tb5.Text);
+            double i = int.Parse(tb4.Text);
+                double conver = i * 38;
+            double conver1 = conver * 5;
+                tb5.Text = " " + conver;
+            metr.Text = "Это " + conver1 + " метров ";
 
+            }
         }
+
+       
     }
-}
+

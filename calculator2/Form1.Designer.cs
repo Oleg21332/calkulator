@@ -29,8 +29,24 @@
         private void InitializeComponent()
         {
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tb5 = new System.Windows.Forms.TextBox();
+            this.tb4 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.stroka = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.checksim = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.znak = new System.Windows.Forms.Label();
             this.hex = new System.Windows.Forms.Button();
             this.bin = new System.Windows.Forms.Button();
             this.oct = new System.Windows.Forms.Button();
@@ -61,22 +77,7 @@
             this.one = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.znak = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.checksim = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.stroka = new System.Windows.Forms.Label();
-            this.tb4 = new System.Windows.Forms.TextBox();
-            this.tb5 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.metr = new System.Windows.Forms.Label();
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -89,6 +90,7 @@
             this.tabPage3.BackgroundImage = global::calculator2.Properties.Resources._413930;
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage3.Controls.Add(this.metr);
             this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Controls.Add(this.label2);
@@ -103,6 +105,78 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Конвертер";
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(281, 308);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 34);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "будет";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Yellow;
+            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(214, 350);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(122, 34);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "попугаев";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Orange;
+            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(179, 308);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(96, 34);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "удавах";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.OrangeRed;
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(76, 308);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 34);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "В";
+            // 
+            // tb5
+            // 
+            this.tb5.BackColor = System.Drawing.Color.Khaki;
+            this.tb5.ForeColor = System.Drawing.Color.Orange;
+            this.tb5.Location = new System.Drawing.Point(146, 350);
+            this.tb5.Multiline = true;
+            this.tb5.Name = "tb5";
+            this.tb5.Size = new System.Drawing.Size(62, 36);
+            this.tb5.TabIndex = 1;
+            this.tb5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // tb4
+            // 
+            this.tb4.BackColor = System.Drawing.Color.Coral;
+            this.tb4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tb4.ForeColor = System.Drawing.Color.Yellow;
+            this.tb4.Location = new System.Drawing.Point(113, 308);
+            this.tb4.Multiline = true;
+            this.tb4.Name = "tb4";
+            this.tb4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tb4.Size = new System.Drawing.Size(60, 36);
+            this.tb4.TabIndex = 0;
+            this.tb4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // tabPage2
             // 
@@ -122,6 +196,96 @@
             this.tabPage2.Size = new System.Drawing.Size(365, 414);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Строковый калькулятор";
+            // 
+            // stroka
+            // 
+            this.stroka.AutoSize = true;
+            this.stroka.BackColor = System.Drawing.Color.White;
+            this.stroka.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.stroka.Location = new System.Drawing.Point(120, 123);
+            this.stroka.Name = "stroka";
+            this.stroka.Size = new System.Drawing.Size(0, 24);
+            this.stroka.TabIndex = 8;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(67, 337);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(231, 31);
+            this.button6.TabIndex = 7;
+            this.button6.Text = "Статистика";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(67, 300);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(231, 31);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Исправление ошибок в строке";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(67, 263);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(231, 31);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Выделение из строки подстроки";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(67, 226);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(231, 31);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Преобразовать в строчные";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(67, 189);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(231, 31);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Преобразовать в заглавные";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // checksim
+            // 
+            this.checksim.BackColor = System.Drawing.SystemColors.Control;
+            this.checksim.Location = new System.Drawing.Point(67, 152);
+            this.checksim.Name = "checksim";
+            this.checksim.Size = new System.Drawing.Size(231, 31);
+            this.checksim.TabIndex = 2;
+            this.checksim.Text = "Определить длину";
+            this.checksim.UseVisualStyleBackColor = false;
+            this.checksim.Click += new System.EventHandler(this.checksim_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3.Location = new System.Drawing.Point(32, 79);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(301, 39);
+            this.textBox3.TabIndex = 1;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2.Location = new System.Drawing.Point(32, 17);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(301, 39);
+            this.textBox2.TabIndex = 0;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // tabPage1
             // 
@@ -163,6 +327,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Числовой калькулятор";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // znak
+            // 
+            this.znak.AutoSize = true;
+            this.znak.BackColor = System.Drawing.Color.White;
+            this.znak.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.znak.Location = new System.Drawing.Point(20, 9);
+            this.znak.Name = "znak";
+            this.znak.Size = new System.Drawing.Size(0, 24);
+            this.znak.TabIndex = 17;
             // 
             // hex
             // 
@@ -523,174 +697,16 @@
             this.tabControl1.Size = new System.Drawing.Size(373, 440);
             this.tabControl1.TabIndex = 27;
             // 
-            // znak
+            // metr
             // 
-            this.znak.AutoSize = true;
-            this.znak.BackColor = System.Drawing.Color.White;
-            this.znak.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.znak.Location = new System.Drawing.Point(20, 9);
-            this.znak.Name = "znak";
-            this.znak.Size = new System.Drawing.Size(0, 24);
-            this.znak.TabIndex = 17;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(32, 17);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(301, 39);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(32, 79);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(301, 39);
-            this.textBox3.TabIndex = 1;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // checksim
-            // 
-            this.checksim.BackColor = System.Drawing.SystemColors.Control;
-            this.checksim.Location = new System.Drawing.Point(67, 152);
-            this.checksim.Name = "checksim";
-            this.checksim.Size = new System.Drawing.Size(231, 31);
-            this.checksim.TabIndex = 2;
-            this.checksim.Text = "Определить длину";
-            this.checksim.UseVisualStyleBackColor = false;
-            this.checksim.Click += new System.EventHandler(this.checksim_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(67, 189);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(231, 31);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Преобразовать в заглавные";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(67, 226);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(231, 31);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Преобразовать в строчные";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(67, 263);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(231, 31);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Выделение из строки подстроки";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(67, 300);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(231, 31);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Исправление ошибок в строке";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(67, 337);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(231, 31);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Статистика";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // stroka
-            // 
-            this.stroka.AutoSize = true;
-            this.stroka.BackColor = System.Drawing.Color.White;
-            this.stroka.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.stroka.Location = new System.Drawing.Point(120, 123);
-            this.stroka.Name = "stroka";
-            this.stroka.Size = new System.Drawing.Size(0, 24);
-            this.stroka.TabIndex = 8;
-            // 
-            // tb4
-            // 
-            this.tb4.BackColor = System.Drawing.Color.Coral;
-            this.tb4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tb4.Location = new System.Drawing.Point(113, 308);
-            this.tb4.Multiline = true;
-            this.tb4.Name = "tb4";
-            this.tb4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tb4.Size = new System.Drawing.Size(60, 36);
-            this.tb4.TabIndex = 0;
-            this.tb4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // tb5
-            // 
-            this.tb5.BackColor = System.Drawing.Color.Khaki;
-            this.tb5.Location = new System.Drawing.Point(146, 350);
-            this.tb5.Multiline = true;
-            this.tb5.Name = "tb5";
-            this.tb5.Size = new System.Drawing.Size(62, 36);
-            this.tb5.TabIndex = 1;
-            this.tb5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.OrangeRed;
-            this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(76, 308);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 34);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "В";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Orange;
-            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(179, 308);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 34);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "удавах";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Yellow;
-            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(214, 350);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 34);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "попугаев";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(261, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 51);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.metr.AutoSize = true;
+            this.metr.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.metr.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.metr.ForeColor = System.Drawing.Color.GreenYellow;
+            this.metr.Location = new System.Drawing.Point(202, 387);
+            this.metr.Name = "metr";
+            this.metr.Size = new System.Drawing.Size(0, 20);
+            this.metr.TabIndex = 6;
             // 
             // Form1
             // 
@@ -763,6 +779,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label metr;
     }
 }
 
