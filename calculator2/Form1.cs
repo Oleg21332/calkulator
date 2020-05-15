@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace calculator2
 {
@@ -475,7 +476,8 @@ namespace calculator2
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-
+        
+           
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -580,5 +582,22 @@ namespace calculator2
         {
 
         }
-    }
+
+        private void textBox4_TextChanged_1(object sender, EventArgs e)
+        {
+            FileStream file = new FileStream("D:\\wwod.txt", FileMode.OpenOrCreate, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(file);
+            writer.Write("Исходная единица измерения количества информации " + kolvo.Text); //записываем в файл
+            writer.Close();
+        }
+
+        private void textBox5_TextChanged_1(object sender, EventArgs e)
+        { 
+                FileStream file = new FileStream("D:\\wiwod.txt", FileMode.OpenOrCreate, FileAccess.Read);
+                StreamReader reader = new StreamReader(file);
+                label7.Text = reader.ReadToEnd();
+                reader.Close();
+
+            }
+        }
 }

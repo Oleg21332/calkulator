@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.CB1 = new System.Windows.Forms.ComboBox();
             this.kolvo = new System.Windows.Forms.TextBox();
             this.V = new System.Windows.Forms.Button();
@@ -78,8 +80,8 @@
             this.one = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -92,6 +94,8 @@
             this.tabPage3.BackgroundImage = global::calculator2.Properties.Resources._413930;
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage3.Controls.Add(this.textBox5);
+            this.tabPage3.Controls.Add(this.textBox4);
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Controls.Add(this.label7);
             this.tabPage3.Controls.Add(this.CB1);
@@ -109,6 +113,26 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Конвертер";
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Chartreuse;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Location = new System.Drawing.Point(1, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 24);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Количество";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.DarkOrange;
+            this.label7.Location = new System.Drawing.Point(10, 151);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 24);
+            this.label7.TabIndex = 17;
             // 
             // CB1
             // 
@@ -709,25 +733,23 @@
             this.tabControl1.Size = new System.Drawing.Size(373, 440);
             this.tabControl1.TabIndex = 27;
             // 
-            // label7
+            // textBox4
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.DarkOrange;
-            this.label7.Location = new System.Drawing.Point(10, 151);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 24);
-            this.label7.TabIndex = 17;
+            this.textBox4.Location = new System.Drawing.Point(3, 303);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 36);
+            this.textBox4.TabIndex = 19;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged_1);
             // 
-            // label1
+            // textBox5
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Chartreuse;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Location = new System.Drawing.Point(1, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 24);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Количество";
+            this.textBox5.Location = new System.Drawing.Point(250, 303);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 36);
+            this.textBox5.TabIndex = 20;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged_1);
             // 
             // Form1
             // 
@@ -803,6 +825,8 @@
         private System.Windows.Forms.ComboBox CB1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }
 
