@@ -490,15 +490,95 @@ namespace calculator2
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            double i = int.Parse(tb4.Text);
-                double conver = i * 38;
-            double conver1 = conver * 5;
-                tb5.Text = " " + conver;
-            metr.Text = "Это " + conver1 + " метров ";
+   
 
-            }
         }
 
-       
-    }
+        private void label1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void non_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        { } 
+
+        private void V_Click(object sender, EventArgs e)
+        {
+
+
+            double i = int.Parse(kolvo.Text);
+            if (CB1.SelectedItem == "попугаев" && CB2.SelectedItem == "попугаи") // попугай - попугай
+            {
+                double conver = i * 1;
+                label7.Text = conver + " попугай";
+            }
+            if (CB1.SelectedItem == "попугаев" && CB2.SelectedItem == "метры") // попугай - метры
+            {
+                double conver = i * 0.13;
+                label7.Text = conver + " метров";
+            }
+            if (CB1.SelectedItem == "попугаев" && CB2.SelectedItem == "удавы") // попугай - удавы
+            {
+                double conver = i * 0.026315789473683997;
+                label7.Text = conver + " удавов";
+            }
+            if (CB1.SelectedItem == "метров" && CB2.SelectedItem == "попугаи") // метров - попугаи
+            {
+                double conver = i * 7.6;
+                label7.Text = conver + " попугаев";
+            }
+            if (CB1.SelectedItem == "метров" && CB2.SelectedItem == "метры") // метры - метры
+            {
+                double conver = i * 1;
+                label7.Text = conver + " метр";
+            }
+            if (CB1.SelectedItem == "метров" && CB2.SelectedItem == "удавы") // метры - удавы
+            {
+                double conver = i * 0.2;
+                label7.Text = conver + " удавов";
+            }
+            if (CB1.SelectedItem == "удавов" && CB2.SelectedItem == "попугаи") // удавов - попугаи
+            {
+                double conver = i * 38;
+                label7.Text = conver + " попугаев";
+            }
+            if (CB1.SelectedItem == "удавов" && CB2.SelectedItem == "метры") // удавов - метры
+            {
+                double conver = i * 5;
+                label7.Text = conver + " метров";
+            }
+            if (CB1.SelectedItem == "удавов" && CB2.SelectedItem == "удавы") // удавов - удавы
+            {
+                double conver = i * 1;
+                label7.Text = conver + " удав";
+            }
+
+        }
+
+
+        private void kolvo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CB2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CB1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CB1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
